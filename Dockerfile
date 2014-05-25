@@ -4,6 +4,7 @@ MAINTAINER Kamil Trzciński <ayufan@ayufan.eu>
 RUN apt-get update -y
 RUN apt-get install -y openjdk-7-jre-headless
 RUN apt-get install -y wget
+RUN apt-get install -y git-core
 
 RUN adduser --home /jenkins --disabled-login --gecos 'Jenkins' jenkins
 RUN wget -O /jenkins.war http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war
