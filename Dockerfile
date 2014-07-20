@@ -7,6 +7,7 @@ RUN apt-get install -y wget
 RUN apt-get install -y git-core
 
 RUN adduser --home /jenkins --disabled-login --gecos 'Jenkins' jenkins
+RUN # Sun Jul 20 14:37:00 CEST 2014
 RUN wget -O /jenkins.war http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war
 
 USER jenkins
