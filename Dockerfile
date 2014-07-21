@@ -5,6 +5,7 @@ RUN apt-get update -y
 RUN apt-get install -y openjdk-7-jre-headless
 RUN apt-get install -y wget
 RUN apt-get install -y git-core
+RUN apt-get install -y fakeroot
 
 RUN adduser --home /jenkins --disabled-login --gecos 'Jenkins' jenkins
 RUN # Sun Jul 20 14:37:00 CEST 2014
