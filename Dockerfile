@@ -6,7 +6,7 @@ ENV DEBIAN_PRIORITY critical
 ENV DEBCONF_NOWARNINGS yes
 
 RUN apt-get update \
-    && apt-get upgrade
+    && apt-get upgrade -y
 RUN apt-get install -y \
     tzdata-java \
     openjdk-7-jre-headless \
